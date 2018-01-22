@@ -1,0 +1,29 @@
+{
+  "name": "The Cave",
+  "description": "Regain your focus.",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": ["alarms", "notifications", "storage", "activeTab",
+    "tabs", "<all_urls>", 
+    "http://*/",
+        "https://*/", 
+        "*://*/*", 
+        "background"
+    ],
+  "background": {
+    "scripts": ["background.js", "block.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+
+  "browser_action": {
+    "default_title": "The Cave",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+  
+    "128": "cavelogo.png"
+  }, 
+  "content_security_policy": "script-src 'self' https://*.googleapis.com https://*.bootstrapcdn.com; object-src 'self'"
+
+}

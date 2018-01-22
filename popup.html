@@ -1,0 +1,43 @@
+<!-- Copyright 2017 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file. -->
+<html>
+  <head>
+    <title>Cave Popup</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #caveImage {
+        width: 100px;
+        margin: 5px;
+      }
+
+      button {
+        margin: 5px;
+        outline: none;
+      }
+
+      
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+  <body>
+      <img src='./cavelogo.png' id='caveImage'>
+      <h1>Get back to work. </h1>
+      <!-- An Alarm delay of less than the minimum 1 minute will fire
+      in approximately 1 minute incriments if released -->
+      <!-- <button id='sampleSecond' value='0.1'>I'm Tired!</button>
+      <button id='15min' value='15'>I'm Bored!</button>
+      <button id='30min' value='30'>I'm Stuck!</button>
+      <button id='cancelAlarm'>I'm Demotivated!</button> -->
+   <!-- link to non-persistent background script -->
+   <script src="popup.js"></script>
+  </body>
+</html>
